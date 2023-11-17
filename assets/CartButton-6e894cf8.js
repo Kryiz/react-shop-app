@@ -1,1 +1,0 @@
-import{j as r,c as s}from"./main-4fb4346a.js";const a=({onClick:e,message:t})=>r.jsxs("button",{onClick:e,className:"w-full sm:w-fit flex items-center justify-center text-white bg-amber-600 transition-all border rounded-lg py-2 px-4 hover:bg-amber-700 shadow-md hover:shadow-sm duration-500",children:[t,r.jsx(s,{className:"w-6 h-6 "+(t?"ml-2":"")})]});export{a as C};
