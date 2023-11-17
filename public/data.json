@@ -5,56 +5,56 @@
             "name": "Пицца Биг Биф",
             "ingredients": "бургер соус, говядина, маринованные огурцы, красный лук, жареный лук, сыр Моцарелла",
             "price": 789,
-            "image": "/react-shop-app/assets/pizza/big-beef.jpg"
+            "image": "../src/assets/pizza/big-beef.jpg"
         },
         {
             "id": 2,
             "name": "Пицца 4 сезона",
             "ingredients": "томатный соус, сыр Моцарелла, пепперони, ветчина, курица, грибы, лук, перец, томаты, оливки",
             "price": 759,
-            "image": "/react-shop-app/assets/pizza/four-seasons.jpg"
+            "image": "../src/assets/pizza/four-seasons.jpg"
         },
         {
             "id": 3,
             "name": "Пицца Медово-горчичная",
             "ingredients": "томатный соус, сыр Моцарелла, пепперони, курица, томаты, маринованные огурцы, медово-горчичный соус",
             "price": 759,
-            "image": "/react-shop-app/assets/pizza/honey-mustard.jpg"
+            "image": "../src/assets/pizza/honey-mustard.jpg"
         },
         {
             "id": 4,
             "name": "Пицца Цыпленок ранч",
             "ingredients": "сливочный соус, сыр Моцарелла, курица, томаты, соус ранч",
             "price": 759,
-            "image": "/react-shop-app/assets/pizza/chicken-ranch.jpg"
+            "image": "../src/assets/pizza/chicken-ranch.jpg"
         },
         {
             "id": 5,
             "name": "Пицца Чили Биф",
             "ingredients": "азиатский соус, томатный соус, говядина, томаты, зеленый перец, сыр Моцарелла",
             "price": 789,
-            "image": "/react-shop-app/assets/pizza/chili-beef.jpg"
+            "image": "../src/assets/pizza/chili-beef.jpg"
         },
         {
             "id": 6,
             "name": "Пицца Барбекю Биф",
             "ingredients": "барбекю соус, томатный соус, говядина, лук, сыр Моцарелла",
             "price": 659,
-            "image": "/react-shop-app/assets/pizza/barbeque-beef.jpg"
+            "image": "../src/assets/pizza/barbeque-beef.jpg"
         },
         {
             "id": 7,
             "name": "Пицца Средиземноморская",
             "ingredients": "креветки, томатный соус, овощи, сыр Моцарелла, салат айсберг, азиатский соус",
             "price": 759,
-            "image": "/react-shop-app/assets/pizza/mediterranean.jpg"
+            "image": "../src/assets/pizza/mediterranean.jpg"
         },
         {
             "id": 8,
             "name": "Пицца Пепперони Классик",
             "ingredients": "томатный соус, сыр Моцарелла, пепперони, томаты",
             "price": 459,
-            "image": "/react-shop-app/assets/pizza/pepperoni.jpg"
+            "image": "../src/assets/pizza/pepperoni.jpg"
         }
     ],
     "sushi": [
@@ -63,56 +63,56 @@
             "name": "Ролл Калифорния",
             "ingredients": "краб-микс, авокадо, огурец, тобико, рис, нори",
             "price": 505,
-            "image": "/react-shop-app/assets/sushi/california.jpg"
+            "image": "../src/assets/sushi/california.jpg"
         },
         {
             "id": 10,
             "name": "Ролл Калифорния с угрем",
             "ingredients": "угорь, икра тобико черная, авокадо, огурцы, кунжут, стружка тунца, рис, нори",
             "price": 465,
-            "image": "/react-shop-app/assets/sushi/california-eel.jpg"
+            "image": "../src/assets/sushi/california-eel.jpg"
         },
         {
             "id": 11,
             "name": "Ролл Филадельфия",
             "ingredients": "лосось, огурец, авокадо, кунжут, сыр, зеленый лук, рис, нори",
             "price": 655,
-            "image": "/react-shop-app/assets/sushi/philadelphia.jpg"
+            "image": "../src/assets/sushi/philadelphia.jpg"
         },
         {
             "id": 12,
             "name": "Ролл Филадельфия дракон",
             "ingredients": "угорь, сыр, тамаго, соус унаги, кунжут",
             "price": 550,
-            "image": "/react-shop-app/assets/sushi/philadelphia-dragon.jpg"
+            "image": "../src/assets/sushi/philadelphia-dragon.jpg"
         },
         {
             "id": 13,
             "name": "Ролл Дракон",
             "ingredients": "угорь, авокадо, нежный сыр, тобико, кунжут, зеленый лук, тунец",
             "price": 515,
-            "image": "/react-shop-app/assets/sushi/dragon.jpg"
+            "image": "../src/assets/sushi/dragon.jpg"
         },
         {
             "id": 14,
             "name": "Ролл Запеченный краб",
             "ingredients": "краб-микс, авокадо, тобико, зеленый лук, рис, нори",
             "price": 505,
-            "image": "/react-shop-app/assets/sushi/baked-crab.jpg"
+            "image": "../src/assets/sushi/baked-crab.jpg"
         },
         {
             "id": 15,
             "name": "Маки с тунцом",
             "ingredients": "тунец, рис, нори",
             "price": 310,
-            "image": "/react-shop-app/assets/sushi/maki-tuna.jpg"
+            "image": "../src/assets/sushi/maki-tuna.jpg"
         },
         {
             "id": 16,
             "name": "Маки с лососем",
             "ingredients": "лосось, рис, нори",
             "price": 340,
-            "image": "/react-shop-app/assets/sushi/maki-salmon.jpg"
+            "image": "../src/assets/sushi/maki-salmon.jpg"
         }
     ]
 }

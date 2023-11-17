@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# React / Redux-Toolkit / TypeScript / Vite ✔️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+👉 [`Демо`](https://kryiz.github.io/react-shop-app/) 👈
 
-Currently, two official plugins are available:
+## Суть:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Пет-проект ***Магазин "ReactShop"*** с адаптацией на любые разрешения.
+Витрина с двумя подразделами, есть поиск по товарам, сортировка и фильтры, любой товар можно добавлять в корзину, в корзине формируется заказ.
+В личном кабинете, в зависимости от роли "Клиент" или "Администратор", можно смотреть заказы или содержимое корзины.
 
-## Expanding the ESLint configuration
+## Установка:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+- Устанавливаем зависимости
 
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+pnpm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Запускаем проект
+
+```js
+pnpm dev
+```
+
+- или
+
+```js
+pnpm preview
+```
+
+## Данные
+
+> В качестве mock данных использовался свой json с товарами
+
+## Стек:
+
+- React
+- Redux-Toolkit
+- Typescrypt
+- React Router v6 |
+- RTK-Query
+- React-Hook-Form
+- Vite
+- pnpm
+- Tailwind Css
+- Heroicons
+- Iconify
+- React Loading Skeleton
+- React Helmet
+- Jest
+- React Testing Library
