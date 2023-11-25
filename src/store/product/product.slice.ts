@@ -5,11 +5,13 @@ interface IProducts {
     pizzas: IProduct[]
     pizzasFiltered: IProduct[]
     pizzasIngredients: string[]
+    pizzasIngSelected: string | null
     pizzasMinPrice: number
     pizzasMaxPrice: number
     sushi: IProduct[]
     sushiFiltered: IProduct[]
     sushiIngredients: string[]
+    sushiIngSelected: string | null
     sushiMinPrice: number
     sushiMaxPrice: number
     searchResults: IProduct[]
@@ -19,11 +21,13 @@ const initialState: IProducts = {
     pizzas: [],
     pizzasFiltered: [],
     pizzasIngredients: [],
+    pizzasIngSelected: null,
     pizzasMinPrice: 0,
     pizzasMaxPrice: 0,
     sushi: [],
     sushiFiltered: [],
     sushiIngredients: [],
+    sushiIngSelected: null,
     sushiMinPrice: 0,
     sushiMaxPrice: 0,
     searchResults: []
@@ -109,6 +113,13 @@ export const ProductSlice = createSlice({
                     .filter(product => product.ingredients.toLowerCase().includes(searchTerm))
             }
         },
+        setFilteredIngredients: (state, action: PayloadAction<{productName: string, ingredient: string}>) => {
+            if (action.payload.productName === 'pizzas') {
+                state.pizzasIngSelected = action.payload.ingredient
+            } else if (action.payload.productName ==='sushi') {
+                state.sushiIngSelected = action.payload.ingredient
+            }
+        },
         resetFilterProducts: (state, action: PayloadAction<string>) => {
             if (action.payload === 'pizzas') {
                 state.pizzasFiltered = state.pizzas
@@ -119,8 +130,10 @@ export const ProductSlice = createSlice({
         resetFilterIngredients: (state, action: PayloadAction<string>) => {
             if (action.payload === 'pizzas') {
                 state.pizzasFiltered = state.pizzas
+                state.pizzasIngSelected = null
             } else if (action.payload === 'sushi') {
                 state.sushiFiltered = state.sushi
+                state.sushiIngSelected = null
             }
         },
         searchProducts: (state, action: PayloadAction<string>) => {

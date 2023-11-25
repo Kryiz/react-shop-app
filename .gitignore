@@ -1,3 +1,7 @@
+test
+.vscode
+coverage
+vitest.config.ts
 TEMP
 
 # Logs

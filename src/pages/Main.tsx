@@ -32,13 +32,6 @@ export const Main = () => {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-lg md:text-2xl font-bold mb-4 hover:animate-pulse">Тестирование :</h2>
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-lg md:text-2xl font-bold text-amber-600 mb-12">
-                        <UnderlinedLink href={'https://jestjs.io/'} target='_blank'>Jest</UnderlinedLink> /
-                        <UnderlinedLink href={'https://testing-library.com/docs/react-testing-library/intro/'} target='_blank'>React Testing Library</UnderlinedLink>
-                    </div>
-                </div>
-                <div>
                     <h2 className="text-lg md:text-2xl font-bold mb-4 hover:animate-pulse">Автор © Антон Пыжов :</h2>
                     <div className="flex justify-center gap-2 md:gap-4 text-lg md:text-2xl font-bold text-amber-600 mb-6">
                         <UnderlinedLink href={'https://github.com/Kryiz'} target='_blank'>GitHub</UnderlinedLink>

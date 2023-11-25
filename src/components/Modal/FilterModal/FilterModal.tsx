@@ -11,13 +11,15 @@ interface IFilterModalProps {
 }
 
 export const FilterModal: React.FC<IFilterModalProps> = ({ productName, onClose }) => {
-    const { pizzasIngredients, sushiIngredients } = useAppSelector(state => state.storage)
-    const { filterProductsByIngedients, resetFilterProducts, resetFilterIngredients } = useActions()
-    const [activeIngredient, setActiveIngredient] = useState<string | null>(null)
+    const { pizzasIngredients, sushiIngredients, pizzasIngSelected, sushiIngSelected } = useAppSelector(state => state.storage)
+    const { filterProductsByIngedients, resetFilterProducts, resetFilterIngredients, setFilteredIngredients } = useActions()
     const ingredients = useMemo(() => productName === 'pizzas' ? pizzasIngredients : sushiIngredients, [productName, pizzasIngredients, sushiIngredients])
+    const selectedIngredients = useMemo(() => productName === 'pizzas' ? pizzasIngSelected : sushiIngSelected, [productName, pizzasIngSelected, sushiIngSelected])
+    const [activeIngredient, setActiveIngredient] = useState<string | null>(selectedIngredients)
 
     const handleClick = (productName: string, ingredient: string) => {
         filterProductsByIngedients({ productName, ingredient })
+        setFilteredIngredients({ productName, ingredient })
         if (activeIngredient === ingredient) {
             setActiveIngredient(null)
             resetFilterIngredients(productName)

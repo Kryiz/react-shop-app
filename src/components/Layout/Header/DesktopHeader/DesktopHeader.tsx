@@ -4,7 +4,7 @@ import { ICartItem } from "../../../../lib/interfaces";
 import { Search } from "../Search/Search"
 import { AuthModal } from "../../../Modal/AuthModal/AuthModal";
 import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/solid"
-import RPlogo from '../../../../assets/logo.png';
+import logo from '../../../../assets/logo.png';
 
 interface IDesktopHeaderProps {
     cart: ICartItem[]
@@ -18,7 +18,7 @@ export const DesktopHeader: React.FC<IDesktopHeaderProps> = ({ cart, image, isAd
     return (
         <div className='hidden md:flex irems-center justify-between gap-3 py-3'>
             <Link to={ROUTES.base}>
-                <img src={RPlogo} className="w-28" alt='ReactPizza' />
+                <img src={logo} className="w-28" alt='ReactPizza' />
             </Link>
             <Search />
             <div className='flex items-center gap-x-3 text-xl'>
